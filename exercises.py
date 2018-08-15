@@ -18,11 +18,16 @@ else:
     print('Study Harder!')
 
 #3. Declare a variable named download_speed and assign it a data value of 50. Next create a conditional statement that will check the download speed and print the following based on the condition:
-
+download_speed = 50
 # <= 50: 'Basic Package'
 # <=100: 'Premium Package'
 # >100: 'Platinum Package'
-
+if download_speed <= 50:
+    print('Basic Package')
+elif download_speed <= 100:
+    print('Premium Package')
+elif download_speed > 100:
+    print('Platinum Package')
  #4 Function - check_password
  #Create a function named check_password which takes a parameter password.
 
