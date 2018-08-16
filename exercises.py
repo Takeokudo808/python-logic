@@ -142,7 +142,15 @@ pos_neg(-4)
 
 #13 Function name_caps
 #Create a function named name_caps which takes a parameter name.
+def name_caps(name):
+    if (len(name) <= 5):
+        print(name.title())
+    elif (len(name) <= 10):
+        print(name.upper())
+    else:
+        print(name)
 
+name_caps('jeremy')
 #The function will check the number of characters in the name that is passed into the function and do the following:
 
 #if characters in name <=5: capitalize the first letter in the name
