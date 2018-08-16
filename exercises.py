@@ -104,7 +104,14 @@ bandwidth(mbps)
 
 #10 Function ssh_keys
 #Create a function named ssh_keys which takes two parameters public and private.
+def ssh_keys(public, private):
+    if (public != private):
+        return False
+    else:
+        return True
 
+ssh_connection= ssh_keys(2, 8)
+print(ssh_connection)
 #The function will return false if public and private aren't equal and return true if they are equal.
 
 #Declare a variable named ssh_connection and print your result.
