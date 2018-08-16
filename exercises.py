@@ -83,10 +83,20 @@ print(even_cryptography(4))
 
 #9 Function bandwidth
 #Declare a variable named mbps and assign it a list of 5 number values of your choosing. 
-
+mbps= [15, 47, 33, 42, 13]
 #Next, create a function named bandwidth which takes a parameter usage.
 #The function will sum up the list of numbers and print the following messages based on the condition:
+def bandwidth(usage):
+    if (sum(usage) <= 50):
+        print('Light User')
+    elif (sum(usage) <= 100):
+        print('Moderate User')
+    elif (sum(usage) <= 150):
+        print('Multi Media User')
+    else:
+        print('Power User')
 
+bandwidth(mbps)
 #if sum <= 50: 'Light User'
 #if sum <= 100: 'Moderate User'
 #if sum <=150: 'Multi Media User'
