@@ -72,7 +72,13 @@ keys = ('zztop')
 print(encryption(keys))
 #8 Function even_cryptography
 #Create a function named even_cryptography which takes a parameter num.
+def even_cryptography(num):
+    if (num%2 == 0):
+        print('Decryption Success')
+    else:
+        print('Decryption Fail')
 
+print(even_cryptography(4))
 #The function will print 'Decryption Success' if the number passed into the function is even and print 'Decryption Fail' if it isn't.
 
 #9 Function bandwidth
